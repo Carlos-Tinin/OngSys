@@ -18,28 +18,9 @@
 
      <!-- Nome da empresa animacao  -->
 @section('content')
-  <div class="animacao">
-    <h1 class="logo">    
+  <center> <h2> Serviços comunitários OngSys </h2> </center>
 
-      <span class="cuboid">
-        <span class="cuboid-face cuboid-face-front"></span>
-        <span class="cuboid-face cuboid-face-back"></span>
-        <span class="cuboid-face cuboid-face-top"></span>
-        <span class="cuboid-face cuboid-face-bottom"></span>
-        <span class="cuboid-face cuboid-face-left"></span>
-        <span class="cuboid-face cuboid-face-right"></span>
-      </span>
-      <span >NGSYS</span>
-    </h1>
-  </div>
-  <div class="animacao" text="green">
-   <font color="#ccccff"><h1>ONG SYSTEM</h1></font>
- </div>
-
-
-
-
- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -66,55 +47,50 @@
   </a>
 </div>
 
+<center>Serviços a realizar</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<fieldset class="fieldset-border">
- <legend class="legend-border">
-  <i>
-   <b>
-    <font color="blue">QUEM</font> <font color="black">SOMOS</font>
-  </legend> 
-</b>
-</i>
-<font size="4">
-  <p>
-    A empresa junior, formada por alunos do curso de engenharia da computação
-    da Univesidade Estadual de Feira de Santana  <a href="http:/www.ecompjr.com.br/">(Ecompjr) </a> 
-    agora tem um serviço comunitário que seráa prestado a toda a comunicade localizada próxima as ao Campus    
-  </p>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="teste1.jpg1" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="teste1.jpg1" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="teste1.jpg1" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-  <p>
-    A empresa junior, formada por alunos do curso de engenharia da computação
-    da Univesidade Estadual de Feira de Santana  
+<center>Serviços realizados</center>
+  
 
-  </p>
-</font>
-</fieldset>
 
+ 
 @endsection
-
-
-
-
-
-
-
-
-
-
- <style>
-.animacao {     
- display: flex;
- justify-content: center;
- align-items: center;
- height: 29vh;
-}
-</style>
-
-
-
-
-
-
 
 
 
