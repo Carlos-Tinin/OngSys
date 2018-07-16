@@ -2,21 +2,22 @@
 
 @section('content')
 
-  <form action="/action_page.php">
+  <form method="POST" action="{{ route('login') }}">
+    @csrf
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
-    <label for="uname"><b>Nome Administrador</b></label>
-    <input type="text" placeholder="digite seu nome" name="uname" required>
+    <label for="uname"><b>Email Administrador</b></label>
+    <input id="email"  type="email"  placeholder="digite seu email"  name="email" required>
 
     <label for="psw"><b>Senha</b></label>
-    <input type="password" placeholder="digite a senha" name="psw" required>
+    <input id="password" type="password" placeholder="digite a senha"  name="password"  required>
 
     <button id="button2" type="submit">Login</button>
     <label>
-      <input type="checkbox" checked="checked" name="remember"> lembre-se de mim !
+      <input  type="checkbox" checked="checked" name="remember"> lembre-se de mim !
     </label>
   </div>
    <!-- 

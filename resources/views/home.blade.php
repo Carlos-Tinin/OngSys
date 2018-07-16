@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Bem-Vindo Senhor  {{{ Auth::user()->name}}}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,9 +14,36 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Você esta logado como Administrador !<br>
+                    No menu voçê escolhe o que você pode editar neste site !!!
+                 
+
                 </div>
+
             </div>
+               <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
         </div>
     </div>
 </div>

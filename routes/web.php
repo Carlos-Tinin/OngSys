@@ -16,15 +16,13 @@ Route::get('/', function () {
 });
 
 
-Route::get('/servicos', function () {
-    return view('servicos');
-});
+Route::get('/servicos','VisitanteController@servicos');
 
-Route::get('/membros', function () {
-    return view('menbros');
-});
+Route::get('/membros', 'VisitanteController@membros');
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/membrosAdm', 'HomeController@membrosAdm')->name('home');
+Route::get('/adicionarMembro', 'HomeController@addMembros')->name('home');

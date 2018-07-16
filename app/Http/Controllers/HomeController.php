@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+     public function membrosAdm()
+    {
+        return view('membrosAdm');
+    }
+     public function addMembros()
+    {
+        return view('addMembros');
+    }
 }
