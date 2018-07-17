@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pessoa;
 
 class HomeController extends Controller
 {
@@ -11,8 +12,15 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+
+    
+      private $pessoa;
+   
+
+    public function __construct(Pessoa $pessoa)
+    {   
+        //$this->xerox = $xerox;
+        $this->pessoa = $pessoa;
         $this->middleware('auth');
     }
 
@@ -27,11 +35,33 @@ class HomeController extends Controller
     }
 
      public function membrosAdm()
-    {
-        return view('membrosAdm');
+    {   
+        
+        $pessoas = $this->pessoa->paginate(5);
+        return view('membrosAdm',compact('pessoas'));
+       // return view('membrosAdm');
     }
      public function addMembros()
     {
         return view('addMembros');
+    }
+
+
+    public function PostAddMembros(Request $request)
+    {    
+        // dd($request->all()); 
+         Pessoa::create([
+        'nome' => $request->nome,
+        'cargo' => $request->cargo,
+        'informacao' => $request->informacao,
+        //'hash' => $hashFinal,
+        //'dataDeBusca' =>$request->dataDeBusca,
+       // 'xerox_id' =>$request->xeroxes_id,
+       // 'user_id' =>Auth::user()->id,
+      //  'nomeUsuario' => Auth::user()->name,
+        ]);
+       //$pessoa = $this->membro->create($request->all());
+        $pessoas = $this->pessoa->paginate(5);
+        return view('membrosAdm',compact('pessoas'));
     }
 }

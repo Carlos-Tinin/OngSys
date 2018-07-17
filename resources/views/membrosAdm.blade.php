@@ -32,6 +32,7 @@
                     <br>
 
             <table class="table table-bordered table-responsive-md table-striped text-center">
+                
                 <tr>
                     <th class="text-center">Nome</th>
                     <th class="text-center">Informações</th>
@@ -42,10 +43,11 @@
                     
                     
                 </tr>
+                @foreach($pessoas as $pessoa)
                 <tr>
-                    <td class="pt-3-half" contenteditable="true">Emille Sampaio</td>
-                    <td class="pt-3-half" contenteditable="true">fez vários projetos para a empresa</td>  
-                    <td class="pt-3-half" contenteditable="true">Gerente</td>                
+                    <td class="pt-3-half" contenteditable="true">{{$pessoa->nome}}</td>
+                    <td class="pt-3-half" contenteditable="true">{{$pessoa->informacao}}</td>  
+                    <td class="pt-3-half" contenteditable="true">{{$pessoa->cargo}}</td>                
                     <td>
                         <span class="table-remove"><button type="button" class="btn btn-primary">Alterar</button></span>
                     </td>                    
@@ -53,7 +55,7 @@
                         <span class="table-remove"><button type="button" class="btn btn-danger">Excluir</button></span>
                     </td>
                 </tr>
-
+@endforeach
                 
 
                 <!-- This is our clonable table line -->

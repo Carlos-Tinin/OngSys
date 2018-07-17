@@ -18,29 +18,33 @@
 
      <!-- Nome da empresa animacao  -->
 @section('content')
-<form>
+ 
+<form method="POST" action="{{ url('postAdicionarMembro') }}">
+   @csrf
   <div class="form-group">
-    <center><label for="exampleFormControlInput1">NOME</label></center>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nome do membro...">
+    <center><label for="exampleFormControlInput1"><h4>NOME</h4></label></center>
+    <input id="nome" type="text" name="nome"  class="form-control" id="exampleFormControlInput1" placeholder="nome do membro...">
   </div>
   <div class="form-group">
-    <center><label for="exampleFormControlInput1">CARGO</label></center>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="cargo do membro...">
+    <center><label for="exampleFormControlInput1"><h4>CARGO</h4></label></center>
+    <input name="cargo" type="text" class="form-control" id="exampleFormControlInput1" placeholder="cargo do membro...">
   </div>
   
   <div class="form-group">
-    <center><label for="exampleFormControlTextarea1">INFORMAÇÔES</label></center>
-    <textarea placeholder="informações adicionais sobre o membro..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <center><label for="exampleFormControlTextarea1"><h4>INFORMAÇÔES</h4></label></center>
+    <textarea  name="informacao" placeholder="informações adicionais sobre o membro..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
+  <center></center><button id="button2" type="submit">Enviar</button>
+
+
+
 </form>
  <br>
  <br>
  <br>
  <br>
  <br>
- <br>
- <br>
- <br>
+ <br> 
 @endsection
 
 

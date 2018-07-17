@@ -10,7 +10,7 @@
 
   <div class="container">
     <label for="uname"><b>Email Administrador</b></label>
-    <input id="email"  type="email"  placeholder="digite seu email"  name="email" required>
+    <input id="email"  type="text"  placeholder="digite seu email"  name="email" required>
 
     <label for="psw"><b>Senha</b></label>
     <input id="password" type="password" placeholder="digite a senha"  name="password"  required>
