@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Pessoa;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,5 +10,9 @@ class Pessoa extends Model
 
     public function servicos() {
     	return $this->belongsToMany(Servico::class, "pessoa_servicos");
+    }
+
+    public function cargos() {
+    	return $this->belongsToMany(Cargo::class, "pessoa_cargos");
     }
 }

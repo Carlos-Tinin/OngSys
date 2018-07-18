@@ -5,31 +5,19 @@
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
 */
+
+// Admin routes
+include_once('admin.php');
+
+// Normal user routes
+include_once('normal.php');
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/servicos','VisitanteController@servicos');
-
-Route::get('/membros', 'VisitanteController@membros');
-
-
-
-
-
-
-
 Auth::routes();
 
-
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/membrosAdm', 'HomeController@membrosAdm')->name('home');
-Route::get('/adicionarMembro', 'HomeController@addMembros')->name('home');
-Route::post('/postAdicionarMembro', 'HomeController@PostAddMembros')->name('home');
+
