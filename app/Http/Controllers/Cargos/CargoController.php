@@ -39,7 +39,6 @@ class CargoController extends Controller
     {
         // create a new person
         $cargo = new Cargo();
-
         // fills the cargo's informations
         $cargo->nome = $request->input('nome');
         $cargo->descricao = $request->input('info');
