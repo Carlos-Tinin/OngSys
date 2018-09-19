@@ -5,7 +5,7 @@
   <form method="POST" action="{{ route('login') }}">
     @csrf
   <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    <img src="avatarLogin.jpg" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">

@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Model\Pessoa;
+use App\Model\Servico;
+use Illuminate\Support\Facades\Hash;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -12,8 +17,9 @@ class HomeController extends Controller
      * @return void
      */
     public function __construct()
-    {
-        $this->middleware('auth');
+    {   
+        // verificar se realmente precisa esta comentada essa parte
+        // $this->middleware('auth');
     }
 
     /**
@@ -25,4 +31,26 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function servicos()
+    {
+        $date = date('Y-m-d');
+        $servicos = Servico::paginate(5);
+        return view('admin.read.all_servicos', ['servicos' => $servicos, 'data' => $date]);
+    }
+     
+
+    public function register()
+    {
+         //$user = new User();
+         //$user->password = Hash::make('teste1');
+         //$user->name = 'elvishuges';
+         //$user->email = 'elvishuges@hotmail.com';
+         //$user->save();
+         return "register";        
+    }
+
+    
+
+    
 }
