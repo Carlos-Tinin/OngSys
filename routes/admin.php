@@ -80,4 +80,15 @@ Route::group(['prefix' => 'admin'], function() {
 		// Delete 	-------	
 		Route::get('deletar/{id}', 'AdminController@destroy')->name('admin.remove.usuario');
 	});
+
+	Route::group(['prefix' => 'menu', 'namespace' => 'Admin'], function() {
+		// reade---
+		Route::get('pessoas', 'AdminController@pessoas')->name('admin.menu.pessoa');		
+
+		// Read 	-------
+		Route::get('cargo', 'AdminController@cargo')->name('admin.menu.cargo');		
+		
+		// Read
+		Route::get('servico', 'AdminController@servico')->name('admin.menu.servico');
+	});
 });

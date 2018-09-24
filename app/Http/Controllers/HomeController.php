@@ -41,7 +41,7 @@ class HomeController extends Controller
      
 
     public function register()
-    {
+    {    
          //$user = new User();
          //$user->password = Hash::make('teste1');
          //$user->name = 'elvishuges';

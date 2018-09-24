@@ -12,4 +12,8 @@ class AdminController extends Controller
     {
         $this->middleware('auth');
     }
+
+    public function pessoas(){
+        return view('admin.menu.pessoa');
+    }
 }

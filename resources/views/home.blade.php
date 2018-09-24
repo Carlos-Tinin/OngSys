@@ -34,7 +34,7 @@
                 @endif
                 <div class="card w-50">
                   <div class="card-body">
-                    <a href="{{route('admin.read.all_pessoas')}}"><h5 class="card-title"><span class="badge badge-primary"><ion-icon name="person-add"></ion-icon> Pessoas</span></a> Interface de gerenciamento de pessoas.</h5>                    
+                    <a href="{{route('admin.menu.pessoa')}}"><h5 class="card-title"><span class="badge badge-primary"><ion-icon name="person-add"></ion-icon> Pessoas</span></a> Interface de gerenciamento de pessoas.</h5>                    
                   </div>
                 </div>
 
