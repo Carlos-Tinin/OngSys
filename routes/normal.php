@@ -5,8 +5,7 @@
 | Normal Routes
 |--------------------------------------------------------------------------
 |
-*/
-
+ */
 
 Route::get('/servicos', 'HomeController@servicos')->name('servicos');
 

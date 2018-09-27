@@ -2,22 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Model\Pessoa;
 use App\Model\Servico;
-use Illuminate\Support\Facades\Hash;
-use App\User;
 
 class HomeController extends Controller
 {
     /**
-     * Create a new controller instance.
+     * Create a new controller ins  tance.
      *
      * @return void
      */
     public function __construct()
-    {   
+    {
         // verificar se realmente precisa esta comentada essa parte
         // $this->middleware('auth');
     }
@@ -38,19 +34,15 @@ class HomeController extends Controller
         $servicos = Servico::paginate(5);
         return view('admin.read.all_servicos', ['servicos' => $servicos, 'data' => $date]);
     }
-     
 
     public function register()
-    {    
-         //$user = new User();
-         //$user->password = Hash::make('teste1');
-         //$user->name = 'elvishuges';
-         //$user->email = 'elvishuges@hotmail.com';
-         //$user->save();
-         return "register";        
+    {
+        //$user = new User();
+        //$user->password = Hash::make('teste1');
+        //$user->name = 'elvishuges';
+        //$user->email = 'elvishuges@hotmail.com';
+        //$user->save();
+        return "register";
     }
 
-    
-
-    
 }

@@ -37,13 +37,17 @@
   
   
 <div class="container">
-  <div class="row">
-    <div class="col"><button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-  Listar
-</button></div>
-    <div class="col"><button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-  Adicionar
-</button></div>
+  
+   <ul class="list-group">
+  
+  <a href="{{route('admin.read.all_pessoas')}}">
+    <li class="list-group-item list-group-item-success">Listar</li>
+  </a>
+  <a href="{{route('admin.create.pessoa')}}">
+    <li class="list-group-item list-group-item-success">Adicionar</li>
+  </a>  
+  </ul>  
+
     
   </div>
 </div>

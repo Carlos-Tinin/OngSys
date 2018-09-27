@@ -21,6 +21,8 @@
 @endsection
 
 @section('content')
+
+
 <div class="row justify-content-center">
     <div class="col-md-12">
         <div class="card">
@@ -32,29 +34,24 @@
                         {{ session('status') }}
                     </div>
                 @endif
-                <div class="card w-50">
-                  <div class="card-body">
-                    <a href="{{route('admin.menu.pessoa')}}"><h5 class="card-title"><span class="badge badge-primary"><ion-icon name="person-add"></ion-icon> Pessoas</span></a> Interface de gerenciamento de pessoas.</h5>                    
-                  </div>
-                </div>
+                
+  <ul class="list-group">
+  <a href="{{route('admin.menu.pessoa')}}">
+    <li class="list-group-item list-group-item-success">Interface de gerenciamento de pessoas</li>
+  </a>
+  <a href="{{route('admin.read.all_servicos')}}">
+    <li class="list-group-item list-group-item-success">Interface de gerenciamento de serviços</li>
+  </a>
+  <a href="{{route('admin.read.all_cargos')}}">
+    <li class="list-group-item list-group-item-success">Interface de gerenciamento de cargos</li>
+  </a>  
+  </ul>  
 
-                <div class="card w-50">
-                  <div class="card-body">
-                    <a href="{{route('admin.read.all_servicos')}}"><h5 class="card-title"><span class="badge badge-primary"><ion-icon name="calendar"></ion-icon> Serviços</span></a> Interface de gerenciamento de serviços.</h5>                    
-                  </div>
-                </div>
+              
 
-                <div class="card w-50">
-                  <div class="card-body">
-                    <a href="{{route('admin.read.all_cargos')}}"><h5 class="card-title"><span class="badge badge-primary"><ion-icon name="contact"></ion-icon> Cargos</span></a> Interface de gerenciamento de cargos.</h5>                    
-                  </div>
-                </div>
+               
 
-                <div class="card w-50">
-                  <div class="card-body">
-                    <a href="{{route('register')}}"><h5 class="card-title"><span class="badge badge-primary"><ion-icon name="person-add"></ion-icon> Usuarios</span></a> Adicionar outro administrador.</h5>                    
-                  </div>
-                </div>
+                
             </div>
         </div>
     </div>
