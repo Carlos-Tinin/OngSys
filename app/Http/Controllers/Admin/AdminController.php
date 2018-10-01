@@ -16,4 +16,10 @@ class AdminController extends Controller
     public function pessoas(){
         return view('admin.menu.pessoa');
     }
+    public function cargo(){
+        return view('admin.menu.cargo');
+    }
+    public function servico(){
+        return view('admin.menu.servico');
+    }
 }

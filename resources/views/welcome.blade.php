@@ -88,9 +88,6 @@
 
 @endsection
 
-
-
-
  <style>
 .animacao {     
  display: flex;
@@ -99,14 +96,6 @@
  height: 29vh;
 }
 </style>
-
-
-
-
-
-
-
-
 
     </body>
 </html>

@@ -39,10 +39,10 @@
   <a href="{{route('admin.menu.pessoa')}}">
     <li class="list-group-item list-group-item-success">Interface de gerenciamento de pessoas</li>
   </a>
-  <a href="{{route('admin.read.all_servicos')}}">
+  <a href="{{route('admin.menu.servico')}}">
     <li class="list-group-item list-group-item-success">Interface de gerenciamento de serviços</li>
   </a>
-  <a href="{{route('admin.read.all_cargos')}}">
+  <a href="{{route('admin.menu.cargo')}}">
     <li class="list-group-item list-group-item-success">Interface de gerenciamento de cargos</li>
   </a>  
   </ul>  
